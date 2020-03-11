@@ -1,0 +1,25 @@
+<div class="productsListContainer">
+    <h2>Products</h2>
+
+    <i class="material-icons" appTooltip="list">view_list</i>
+
+    <i class="material-icons" appTooltip="module">view_module</i>
+
+    <ul class="listView">
+        <div class="product" *ngFor="let product of products">
+
+            <div>
+                <img src="{{ product.image }}" alt="Product image">
+            </div>
+            <div class="productData">
+                <h3>
+                    product #{{ product.id }}
+                </h3>
+                <p>{{ product.createdAt | date:'short' }} - {{ product.description }}</p>
+                <p>{{ product.price | euroPipe }}</p>
+                <button ()>{{buttonText}}</button>
+            </div>
+
+        </div>
+    </ul>
+</div>

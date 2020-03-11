@@ -1,0 +1,39 @@
+h2{
+    font-size: 30px;
+}
+
+.productsListContainer {
+    padding: 0 2%;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.product {
+    display: flex;
+    padding: 2% 0;
+    border-bottom: 1px solid grey;
+}
+
+.productData {
+    display: grid;
+    padding: 10px 10px;
+}
+
+button{
+    width: 100px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 4px 16px;
+    border-radius: 3px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+i{
+    cursor: pointer;
+    margin-right: 10px;
+}
